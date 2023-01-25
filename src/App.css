@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,175,1) 35%, rgba(0,212,255,1) 100%);
+}.box{
+  border-radius: 10px;
+  background: rgb(208,208,212);
+background: linear-gradient(90deg, rgba(208,208,212,1) 0%, rgba(106,205,226,1) 100%);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#rock, #rockSpan{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: url(./component/img/rock.svg);
+  background-repeat: no-repeat;
+  background-size:auto;
+  padding: 5px;
+  
+}#paper, #paperSpan{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: url(./component/img/paper.svg);
+  background-repeat: no-repeat;
+  background-size:auto;
+  padding: 5px;
+  margin-left: 40px;
+  margin-right: 40px;
+}#scissor, #scissorSpan{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: url(./component/img/scissor.svg);
+  background-repeat: no-repeat;
+  background-size:auto;
+  padding: 5px;
 }
