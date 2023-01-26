@@ -4,14 +4,14 @@
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,175,1) 35%, rgba(0,212,255,1) 100%);
 }.box{
   border-radius: 10px;
-  background: rgb(208,208,212);
-background: linear-gradient(90deg, rgba(208,208,212,1) 0%, rgba(106,205,226,1) 100%);
+  background: rgb(187,217,250);
+  background: radial-gradient(circle, rgba(187,217,250,1) 0%, rgba(52,84,247,1) 61%);
 }
 #rock, #rockSpan{
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: white;
   background-image: url(./component/img/rock.svg);
   background-repeat: no-repeat;
   background-size:auto;
@@ -21,7 +21,7 @@ background: linear-gradient(90deg, rgba(208,208,212,1) 0%, rgba(106,205,226,1) 1
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: white;
   background-image: url(./component/img/paper.svg);
   background-repeat: no-repeat;
   background-size:auto;
@@ -32,7 +32,7 @@ background: linear-gradient(90deg, rgba(208,208,212,1) 0%, rgba(106,205,226,1) 1
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: white;
   background-image: url(./component/img/scissor.svg);
   background-repeat: no-repeat;
   background-size:auto;
