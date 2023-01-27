@@ -154,16 +154,16 @@ export default function Home(){
     return(
        <div className="container-fluid">
             <div className="row " style={{height:"100vh"}}>
-                <div className="col-4 box mx-auto bg-primary my-auto position-relative" style={{height:"46vh"}} >
-                    <div className='col-12 d-flex justify-content-around' style={{position:"absolute",top:"10px",left:'0'}}>
+                <div className="col-xl-4 col-md-6 col-sm-8 box mx-auto bg-primary my-auto  " >
+                    <div className='col-12 palyerChoice d-flex justify-content-around' >
                         <button id="rock" className="mt-4" onClick={()=>rockClick()}></button>
                         <button id="paper"  onClick={()=>paperClick()}></button>
                         <button id="scissor" className="mt-4" onClick={()=>scissorClick()} ></button>
                     </div>
-                    <div className="col-12 my-auto mx-auto text-center" style={{position:"absolute",bottom:"140px",left:'0px'}}>
+                    <div className="col-12 result my-auto mx-auto text-center">
                         <h3 style={{color:'red'}}>{result.result}</h3>
                     </div>
-                    <div className="col-12 d-flex justify-content-around" style={{position:"absolute",bottom:"10px",left:'0'}}>
+                    <div className="col-12 computerChoice d-flex justify-content-around " >
                         <button id="rockSpan" className="mb-4" disabled></button>
                         <button id="paperSpan" className="mt-4" disabled ></button>
                         <button id="scissorSpan" className="mb-4" disabled ></button>

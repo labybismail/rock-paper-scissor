@@ -1,11 +1,12 @@
 
 .row{
   background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,175,1) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,175,1) 35%, rgba(0,212,255,1) 100%);
 }.box{
   border-radius: 10px;
   background: rgb(187,217,250);
   background: radial-gradient(circle, rgba(187,217,250,1) 0%, rgba(52,84,247,1) 61%);
+  height:46vh;
 }
 #rock, #rockSpan{
   width: 80px;
@@ -14,7 +15,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,175,1) 35%, rgba(
   background-color: white;
   background-image: url(./component/img/rock.svg);
   background-repeat: no-repeat;
-  background-size:auto;
+  background-size:contain;
   padding: 5px;
   
 }#paper, #paperSpan{
@@ -24,7 +25,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,175,1) 35%, rgba(
   background-color: white;
   background-image: url(./component/img/paper.svg);
   background-repeat: no-repeat;
-  background-size:auto;
+  background-size:contain;
   padding: 5px;
   margin-left: 40px;
   margin-right: 40px;
@@ -35,6 +36,28 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,5,175,1) 35%, rgba(
   background-color: white;
   background-image: url(./component/img/scissor.svg);
   background-repeat: no-repeat;
-  background-size:auto;
+  background-size:contain;
   padding: 5px;
+}
+.palyerChoice,.computerChoice{
+  height:40%;
+}
+.result{
+  height: 20%;
+}
+@media screen and (max-width:1024px) {
+  .box{
+    height: 52vh;
+  }
+}
+@media screen and (max-width:601px) {
+}
+@media screen and (max-width:360px) {
+  #scissor, #scissorSpan,#paper, #paperSpan,#rock, #rockSpan{
+    width: 62px;
+    height: 62px;
+  }
+  .box{
+    height: 40vh;
+  }
 }
